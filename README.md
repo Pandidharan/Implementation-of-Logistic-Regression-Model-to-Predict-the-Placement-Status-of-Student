@@ -8,8 +8,6 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-### Algorithm for the Logistic Regression Model to Predict Placement Status of Students:
-
 1. **Import Libraries**  
    - Import the necessary Python libraries, including pandas, sklearn modules, and others.
 
