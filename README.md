@@ -8,10 +8,47 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import the required packages and print the present data.
-2. Find the null and duplicate values.
-3. Using logistic regression find the predicted values of accuracy , confusion matrices.
-4. Display the results.
+### Algorithm for the Logistic Regression Model to Predict Placement Status of Students:
+
+1. **Import Libraries**  
+   - Import the necessary Python libraries, including pandas, sklearn modules, and others.
+
+2. **Load Dataset**  
+   - Read the dataset (`Placement_Data.csv`) into a DataFrame using pandas.
+
+3. **Inspect Data**  
+   - Display the first few rows of the dataset to understand its structure.
+
+4. **Preprocess Data**  
+   - Create a copy of the dataset for processing.
+   - Drop irrelevant columns (`sl_no`, `salary`) to simplify analysis.
+   - Check for missing values and duplicates in the data.
+   - Encode categorical variables into numerical format using `LabelEncoder`.
+
+5. **Prepare Features (X) and Target (Y)**  
+   - Define the features (`X`) by excluding the target variable (`status`).
+   - Set the target variable (`Y`) as the encoded `status` column.
+
+6. **Split Data**  
+   - Split the dataset into training (80%) and testing (20%) sets using `train_test_split`.
+
+7. **Build Logistic Regression Model**  
+   - Initialize the logistic regression model using the `liblinear` solver.
+   - Train the model on the training dataset (`x_train`, `y_train`).
+
+8. **Make Predictions**  
+   - Use the trained model to predict the placement status for the test set (`x_test`).
+
+9. **Evaluate Model**  
+   - Calculate the model's accuracy using `accuracy_score`.
+   - Generate a confusion matrix to assess prediction errors.
+   - Create a classification report to summarize performance metrics like precision, recall, and F1-score.
+
+10. **Predict Placement Status for New Data**  
+    - Input a sample student’s feature values to predict their placement status using the trained model.
+
+11. **Output Results**  
+    - Display the accuracy score, confusion matrix, classification report, and prediction result for the sample input.
 ## Program:
 ```
 /*
